@@ -2,3 +2,79 @@
   display: flex;
   gap: 8px;
 }
+.circlesWrapper,.formWrapper,.paletesContainer {
+  display: grid;
+  place-self: center;
+}
+.circlesWrapper {
+  margin: 24px 0;
+}
+.formWrapper {
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.field {
+  display: flex;
+}
+.nameIpt {
+  outline: none;
+  height: 32px;
+  border-radius:8px;
+  border:solid 3px #fff;
+  background: #2C2C2C;
+  color: #fff;
+}
+
+.submitBtn {
+  width: 64px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-left: 4px;
+  font-size: 24px; 
+}
+.containerTitle {
+  text-align: left;
+}
+.paletesContainer {
+  margin-top: 24px;
+}
+.paleteInfo{
+
+}
+.paletes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px 48px;
+}
+.root {
+  display: grid;
+  background: #2C2C2C;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.savedPalete {
+  background: #151515;
+  display:flex;
+  gap:12px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.nameTrash{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.trash {
+justify-self: right;
+}
+
+
+
+@media (max-width:890px) {
+  .formWrapper,.paletes {
+    grid-template-columns: auto;
+  }
+}
